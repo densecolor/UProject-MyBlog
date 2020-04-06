@@ -1,0 +1,52 @@
+main {
+  position: relative;
+  max-width: 1259px;
+}
+
+.blog {
+  margin-top: 53px;
+  padding: 10px 10px 10px 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.blog-img {
+  height: 50vh;
+  width: 100%;
+  background-image: url(/assets/blogpost-first.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.blog-title {
+  font-weight: 400px;
+  text-align: center;
+}
+
+.blog-date {
+  font-size: 13px;
+  font-weight: 250px;
+  color: rgb(131, 130, 130);
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  color: rgb(137, 137, 139);
+}
+
+@media (max-width: 768px) {
+  .blog {
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .blog-img {
+    height: 30vh;
+  }
+}

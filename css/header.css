@@ -1,0 +1,47 @@
+header {
+  position: fixed;
+  top: 0px;
+  left: 220px;
+  height: 48px;
+  width: 100%;
+  background-color: #c2c2c2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(95, 94, 94);
+  z-index: 100;
+}
+
+.button {
+  position: absolute;
+  left: 30px;
+}
+
+header div a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 15px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  text-align: end;
+  transition: .33s ease;
+}
+
+.button a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #131313;
+  transition: .33s ease;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 28px;
+  }
+}

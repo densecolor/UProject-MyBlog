@@ -1,0 +1,135 @@
+main {
+  position: relative;
+  max-width: 1259px;
+}
+
+content {
+  margin-top: 53px;
+  padding: 20px 20px 20px 240px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1.5em;
+}
+
+card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgba(53, 52, 52, .15);
+  height: 11em;
+  background-color: #fff;
+  transition: all .33s ease;
+  overflow: hidden;
+}
+
+card:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 15px 45px -10px rgba(70, 69, 69, .3);
+}
+
+.post-img {
+  width: 30%;
+  background-color: #c2c2c2;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.post-img-first {
+  background-image: url(/assets/blogpost-first.png);
+}
+
+content a {
+  text-decoration: none;
+}
+
+.post-header {
+  color: #131313;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+}
+
+.post-content {
+  padding: 5px 20px;
+  width: 70%;
+}
+
+.post-text {
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width:1024px) {
+  content {
+    padding: 20px 20px 20px 240px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1em;
+  }
+
+  card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    height: 20em;
+  }
+
+  .post-img {
+    width: 100%;
+    min-height: 10rem;
+  }
+
+  .post-content {
+    width: auto;
+    padding: 20px;
+  }
+
+  .post-header {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .post-text {
+    margin: 0;
+    padding: 5px;
+    -webkit-line-clamp: 3;
+  }
+
+  .post-date {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  content {
+    padding: 0px 20px 20px 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  content {
+    padding: 0px 20px 20px 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 1em;
+    margin-top: 20px;
+  }
+}

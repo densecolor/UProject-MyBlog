@@ -1,0 +1,107 @@
+aside {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  height: 100vh;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e1e1e1;
+  margin-right: 10px;
+}
+
+.about-img {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  border-radius: 100%;
+  background-image: url(/assets/readmore.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.about-name {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.about-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgb(41, 40, 40);
+  background-color: #cccccd;
+}
+
+.about-footer p {
+  text-align: center;
+}
+
+.about-footer ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+  padding: 0;
+}
+
+.about-footer li {
+  margin-right: 10px;
+}
+
+.twitter {
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/Twitter.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.github {
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/github.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/linkedin.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media (max-width: 768px) {
+  aside {
+    position: relative;
+    width: inherit;
+    height: 20rem;
+    padding: 10px;
+    margin-right: 0px;
+  }
+
+  .about-name {
+    margin: 5px;
+  }
+
+  .about-img {
+    margin-top: 0;
+  }
+
+  .about-footer {
+    position: relative;
+    bottom: auto;
+    border-top: 0px;
+    background-color: #e1e1e1;
+  }
+}
