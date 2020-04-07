@@ -27,6 +27,12 @@ aside {
   font-weight: 700;
 }
 
+.about-company {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px;
+}
+
 .about-text {
   text-align: center;
   font-size: 16px;
@@ -65,10 +71,10 @@ aside {
   background-position: 50% 50%;
 }
 
-.github {
+.facebook {
   width: 20px;
   height: 20px;
-  background-image: url(/assets/github.svg);
+  background-image: url(/assets/facebook.svg);
   background-size: cover;
   background-position: 50% 50%;
 }
